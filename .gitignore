@@ -242,3 +242,4 @@ _Pvt_Extensions
 samples/01-basics/string-joiner/out.txt
 *.filters
 *.vcxproj
+*.sln
