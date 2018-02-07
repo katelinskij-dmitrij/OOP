@@ -1,0 +1,17 @@
+
+*.filters
+*.vcxproj
+*.ipch
+*.pdb
+*.idb
+*.pch
+*.obj
+*.log
+*.lastbuildstate
+*.tlog
+*.sln
+*.ilk
+*.opendb
+*.db
+labs/lab0/printNumWithSumDigits/printNumWithSumDigits/printNumWithSumDigits.cpp
+labs/lab1/dec2bin/.vs/dec2bin/v15/Browse.VC.db
