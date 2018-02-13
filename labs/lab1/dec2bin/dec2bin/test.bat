@@ -1,17 +1,19 @@
+set PROGRAM="%~1"
+
 REM Проверка на запуск программы без указания значения
-dec2bin.exe 
+%PROGRAM% 
 if NOT ERRORLEVEL 1 goto err
 
 REM Проверка на запуск программы с неверным значением
-dec2bin.exe string
+%PROGRAM% string
 if NOT ERRORLEVEL 1 goto err
 
 REM Проверка на запуск программы с отрицательным значением
-dec2bin.exe -253
+%PROGRAM% -253
 if NOT ERRORLEVEL 1 goto err
 
 REM Проверка на запуск программы с верным значением
-dec2bin.exe 15 > output.txt
+%PROGRAM% 15 > output.txt
 if ERRORLEVEL 1 goto err
 FC /B output.txt 1111.txt
 if ERRORLEVEL 1 goto err
