@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "frequencyOccurrenceWords", "frequencyOccurrenceWords\frequencyOccurrenceWords.vcxproj", "{0EF43719-408E-4081-95C8-1356AC173EE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "frequencyOccurrenceWordsTests", "frequencyOccurrenceWordsTests\frequencyOccurrenceWordsTests.vcxproj", "{66E67A5B-EB52-41DD-A995-40691B923EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{0EF43719-408E-4081-95C8-1356AC173EE6}.Release|x64.Build.0 = Release|x64
 		{0EF43719-408E-4081-95C8-1356AC173EE6}.Release|x86.ActiveCfg = Release|Win32
 		{0EF43719-408E-4081-95C8-1356AC173EE6}.Release|x86.Build.0 = Release|Win32
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Debug|x64.ActiveCfg = Debug|x64
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Debug|x64.Build.0 = Debug|x64
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Debug|x86.ActiveCfg = Debug|Win32
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Debug|x86.Build.0 = Debug|Win32
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Release|x64.ActiveCfg = Release|x64
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Release|x64.Build.0 = Release|x64
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Release|x86.ActiveCfg = Release|Win32
+		{66E67A5B-EB52-41DD-A995-40691B923EB4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
