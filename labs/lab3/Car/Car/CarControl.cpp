@@ -98,7 +98,7 @@ bool CCarControl::SetSpeed(istream &args)
 	int speed;
 	args >> speed;
 	bool callback = m_car.SetSpeed(speed);
-	if (callback)
+	if ((callback) && (m_car.IsEngineTurnOn()))
 	{
 		m_output << "Speed was changed on " << m_car.GetSpeed() << '\n';
 	}
