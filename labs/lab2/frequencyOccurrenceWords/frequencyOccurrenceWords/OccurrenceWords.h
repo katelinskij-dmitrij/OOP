@@ -7,4 +7,4 @@
 
 using namespace std;
 
-map <string, int> ReadsAndSearchOccurrenceWords(istream & input, map <string, int> occurrenceWordsMap);
+map <string, int> FillOccurrenceWordsMap(istream & input, map <string, int> occurrenceWordsMap);
