@@ -7,7 +7,7 @@ int main()
 	CCar car;
 	CCarControl virtualControl(car, cin, cout);
 
-	while (!cin.fail())
+	while (!cin.eof())
 	{
 		cout << "Enter the command:\n";
 		if (!virtualControl.HandleCommand())
@@ -15,4 +15,5 @@ int main()
 			cout << "Unknown command!\n";
 		}
 	}
+	return 0;
 }

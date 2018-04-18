@@ -51,7 +51,7 @@ string CBody::ToString()
 	return output.str();
 }
 
-std::string CBody::GetType()const
+string CBody::GetType()const
 {
 	return m_type;
 }
