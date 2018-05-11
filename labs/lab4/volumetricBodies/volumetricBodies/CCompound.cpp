@@ -50,7 +50,7 @@ void CCompound::SetCompoundDensity()
 	}
 }
 
-bool CCompound::AddChildBody(std::shared_ptr<CBody> const& childBody)
+bool CCompound::AddChildBody(shared_ptr<CBody> const& childBody)
 {
 	if (childBody.get() == this)
 	{

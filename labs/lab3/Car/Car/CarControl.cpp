@@ -91,13 +91,17 @@ void CCarControl::SetSpeed(istream& input)
 	{
 		int speed;
 		input >> speed;
-		if (m_car.SetSpeed(speed))
+		if (speed > 0)
 		{
-			m_output << "Speed was change" << endl;
-			return;
+			if (m_car.SetSpeed(speed))
+			{
+				m_output << "Speed was change" << endl;
+				return;
+			}
 		}
 		m_output << "Speed wasn't change" << endl;
 		return;
+
 	}
 	m_output << "Error: Engine was not turned on" << endl;
 }

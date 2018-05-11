@@ -7,7 +7,7 @@ LaunchProgram::LaunchProgram(istream& input, ostream& output, vector<shared_ptr<
 void LaunchProgram::ShowHelpUsage()const
 {
 	m_output << "Input information about volume bodies in array\n"
-		<< "* For example: \n"
+		<< "For example: \n"
 		<< "sphere <density> <radius>\n"
 		<< "cone <density> <radius> <height>\n"
 		<< "parallelepiped <density> <width> <height> <depth>\n"
@@ -241,7 +241,7 @@ void LaunchProgram::PrintMinWeightBody()
 {
 	if (!m_bodiesArray.empty())
 	{
-		m_output << "Volume body with min weight:\n";
+		m_output << "Volume body with min weight in water:\n";
 		m_output << GetMinWeightBody()->ToString() << endl;
 	}
 }
