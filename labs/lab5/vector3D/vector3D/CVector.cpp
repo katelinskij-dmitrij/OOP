@@ -43,6 +43,12 @@ CVector3D CVector3D::CrossProduct(CVector3D const& v1, CVector3D const& v2)
 	return CVector3D(vX, vY, vZ);
 }
 
+CVector3D CVector3D::Normalize(CVector3D const& v)
+{
+	auto invLength = 1 / v.GetLength();
+	return CVector3D(v.x * invLength, v.y * invLength, v.z * invLength);
+}
+
 CVector3D const CVector3D::operator +(CVector3D const& vector3)const
 {
 	return CVector3D(x + vector3.x, y + vector3.y, z + vector3.z);

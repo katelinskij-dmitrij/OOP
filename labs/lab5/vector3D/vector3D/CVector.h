@@ -14,6 +14,7 @@ public:
 	void Normalize();
 	static double DotProduct(CVector3D const& v1, CVector3D const& v2);
 	static CVector3D CrossProduct(CVector3D const& v1, CVector3D const& v2);
+	static CVector3D Normalize(CVector3D const& v);
 
 	CVector3D const operator +(CVector3D const& vector3)const;
 	CVector3D const operator -(CVector3D const& vector3)const;

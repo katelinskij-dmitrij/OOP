@@ -1,22 +1,25 @@
 #pragma once
 #include "stdafx.h"
 
-template <typename T, typename Less>
-
-bool FindMaxEx(vector<T> const& arr, T& maxValue, Less const& less)
+template <typename T, class Less>
+bool FindMaxEx(vector<T> const & arr, T & maxValue, Less const & less)
 {
-	bool isFinded = !arr.empty();
-	if (isFinded)
+	if (arr.empty())
 	{
-		auto maxElem = arr.begin();
-		for (auto it = arr.begin(); it != arr.end(); ++it)
+		return false;
+	}
+	try
+	{
+		T tmpMaxValue = arr[0];
+		for (T const & element : arr)
 		{
-			if (less(*maxElem, *it))
+			if (less(tmpMaxValue, element))
 			{
-				maxElem = it;
+				tmpMaxValue = element;
 			}
 		}
-		maxValue = *maxElem;
+		maxValue = tmpMaxValue;
+		return true;
 	}
-	return isFinded;
+	catch(...) {}
 }
