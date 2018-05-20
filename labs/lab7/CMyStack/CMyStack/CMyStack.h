@@ -22,7 +22,7 @@ public:
 
 	void Push(T const& element)
 	{
-		auto newNode = std::make_shared<Node>(element, m_top);
+		auto newNode = make_shared<Node>(element, m_top);
 		m_top = newNode;
 		m_stackSize++;
 	}

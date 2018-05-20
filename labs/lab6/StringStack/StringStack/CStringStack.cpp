@@ -29,7 +29,7 @@ void CStringStack::Pop()
 {
 	if (IsEmpty())
 	{
-		throw underflow_error("Can't pop element from empty stack.");
+		throw logic_error("Can't pop element from empty stack.");
 	}
 	m_top = m_top->next;
 	--m_size;
@@ -47,7 +47,7 @@ string CStringStack::GetLastElement()const
 {
 	if (IsEmpty())
 	{
-		throw underflow_error("Can't get last element from empty stack.");
+		throw logic_error("Can't get last element from empty stack.");
 	}
 	return(m_top->value);
 }

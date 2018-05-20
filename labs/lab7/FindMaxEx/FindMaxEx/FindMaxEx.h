@@ -8,18 +8,14 @@ bool FindMaxEx(vector<T> const & arr, T & maxValue, Less const & less)
 	{
 		return false;
 	}
-	try
+	T tmpMaxValue = arr[0];
+	for (T const & element : arr)
 	{
-		T tmpMaxValue = arr[0];
-		for (T const & element : arr)
+		if (less(tmpMaxValue, element))
 		{
-			if (less(tmpMaxValue, element))
-			{
-				tmpMaxValue = element;
-			}
+			tmpMaxValue = element;
 		}
-		maxValue = tmpMaxValue;
-		return true;
 	}
-	catch(...) {}
+	maxValue = tmpMaxValue;
+	return true;
 }
